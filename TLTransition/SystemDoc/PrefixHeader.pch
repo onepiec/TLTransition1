@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  TLTransition
+//
+//  Created by hello on 2019/4/18.
+//  Copyright © 2019 tanglei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIViewController+TLTransition.h"
+#import "TlImageTool.h"
+
+
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define SS(strongSelf)  __strong __typeof(&*self)strongSelf = weakSelf;
+
+#define TLKeyWindow UIApplication.sharedApplication.delegate.window
+
+#define TLDeviceWidth [UIScreen mainScreen].bounds.size.width
+#define TLDeviceHeight [UIScreen mainScreen].bounds.size.height
+
+#define NavBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?88:64)
+#define EXStatusHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?24:0)
+#define TabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define EXTabHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?34:0)
+
+#endif /* PrefixHeader_pch */

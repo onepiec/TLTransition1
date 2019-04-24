@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE0B4FE6226DCA9D001BC652 /* ViewController32.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B4FE5226DCA9D001BC652 /* ViewController32.m */; };
+		CE0C0AE52268101A00D87DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0AE42268101A00D87DD3 /* Assets.xcassets */; };
+		CE0C0AFA226810F700D87DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0AF3226810F700D87DD3 /* LaunchScreen.storyboard */; };
+		CE0C0AFC226810F700D87DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0AF7226810F700D87DD3 /* main.m */; };
+		CE0C0AFD226810F700D87DD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0AF8226810F700D87DD3 /* AppDelegate.m */; };
+		CE0C0B69226819E300D87DD3 /* ViewController31.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B04226819E300D87DD3 /* ViewController31.m */; };
+		CE0C0B6A226819E300D87DD3 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B05226819E300D87DD3 /* ViewController3.m */; };
+		CE0C0B6B226819E300D87DD3 /* 奥特曼4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B07226819E300D87DD3 /* 奥特曼4.png */; };
+		CE0C0B6C226819E300D87DD3 /* 奥特曼3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B08226819E300D87DD3 /* 奥特曼3.png */; };
+		CE0C0B6D226819E300D87DD3 /* 奥特曼2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B09226819E300D87DD3 /* 奥特曼2.png */; };
+		CE0C0B6E226819E300D87DD3 /* 奥特曼0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B0A226819E300D87DD3 /* 奥特曼0.png */; };
+		CE0C0B6F226819E300D87DD3 /* 奥特曼1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B0B226819E300D87DD3 /* 奥特曼1.png */; };
+		CE0C0B70226819E300D87DD3 /* TableViewCell31.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B0D226819E300D87DD3 /* TableViewCell31.m */; };
+		CE0C0B71226819E300D87DD3 /* TableViewCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B0E226819E300D87DD3 /* TableViewCell3.m */; };
+		CE0C0B72226819E300D87DD3 /* 火影忍者8.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B13226819E300D87DD3 /* 火影忍者8.png */; };
+		CE0C0B73226819E300D87DD3 /* 火影忍者9.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B14226819E300D87DD3 /* 火影忍者9.png */; };
+		CE0C0B74226819E300D87DD3 /* 火影忍者2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B15226819E300D87DD3 /* 火影忍者2.png */; };
+		CE0C0B75226819E300D87DD3 /* 火影忍者3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B16226819E300D87DD3 /* 火影忍者3.png */; };
+		CE0C0B76226819E300D87DD3 /* 火影忍者1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B17226819E300D87DD3 /* 火影忍者1.png */; };
+		CE0C0B77226819E300D87DD3 /* 火影忍者0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B18226819E300D87DD3 /* 火影忍者0.png */; };
+		CE0C0B78226819E300D87DD3 /* 火影忍者4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B19226819E300D87DD3 /* 火影忍者4.png */; };
+		CE0C0B79226819E300D87DD3 /* 火影忍者5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B1A226819E300D87DD3 /* 火影忍者5.png */; };
+		CE0C0B7A226819E300D87DD3 /* 火影忍者7.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B1B226819E300D87DD3 /* 火影忍者7.png */; };
+		CE0C0B7B226819E300D87DD3 /* 火影忍者6.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B1C226819E300D87DD3 /* 火影忍者6.png */; };
+		CE0C0B7C226819E300D87DD3 /* ViewController11.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B1E226819E300D87DD3 /* ViewController11.m */; };
+		CE0C0B7D226819E300D87DD3 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B1F226819E300D87DD3 /* ViewController1.m */; };
+		CE0C0B7E226819E300D87DD3 /* TableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B24226819E300D87DD3 /* TableViewCell1.m */; };
+		CE0C0B7F226819E300D87DD3 /* TLFPSLable.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B27226819E300D87DD3 /* TLFPSLable.m */; };
+		CE0C0B80226819E300D87DD3 /* UIViewController+TLTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B2B226819E300D87DD3 /* UIViewController+TLTransition.m */; };
+		CE0C0B81226819E300D87DD3 /* TLPushTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B2E226819E300D87DD3 /* TLPushTransitionDelegate.m */; };
+		CE0C0B82226819E300D87DD3 /* TLTabTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B30226819E300D87DD3 /* TLTabTransitionDelegate.m */; };
+		CE0C0B83226819E300D87DD3 /* TLPressTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B32226819E300D87DD3 /* TLPressTransitionDelegate.m */; };
+		CE0C0B84226819E300D87DD3 /* TLAnimationTabScrollStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B35226819E300D87DD3 /* TLAnimationTabScrollStyle.m */; };
+		CE0C0B85226819E300D87DD3 /* TLAnimationAppStoreStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B39226819E300D87DD3 /* TLAnimationAppStoreStyle.m */; };
+		CE0C0B86226819E300D87DD3 /* TLAnimationUIViewFrameStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B3B226819E300D87DD3 /* TLAnimationUIViewFrameStyle.m */; };
+		CE0C0B87226819E300D87DD3 /* TLAnimationWindowScaleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B3D226819E300D87DD3 /* TLAnimationWindowScaleStyle.m */; };
+		CE0C0B88226819E300D87DD3 /* TLAnimationBottomViewAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B3F226819E300D87DD3 /* TLAnimationBottomViewAlert.m */; };
+		CE0C0B89226819E300D87DD3 /* TlImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B44226819E300D87DD3 /* TlImageTool.m */; };
+		CE0C0B8A226819E300D87DD3 /* ViewController01.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B48226819E300D87DD3 /* ViewController01.m */; };
+		CE0C0B8B226819E300D87DD3 /* ViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B4B226819E300D87DD3 /* ViewController0.m */; };
+		CE0C0B8C226819E300D87DD3 /* 海贼王8.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B4D226819E300D87DD3 /* 海贼王8.png */; };
+		CE0C0B8D226819E300D87DD3 /* 海贼王9.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B4E226819E300D87DD3 /* 海贼王9.png */; };
+		CE0C0B8E226819E300D87DD3 /* 海贼王4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B4F226819E300D87DD3 /* 海贼王4.png */; };
+		CE0C0B8F226819E300D87DD3 /* 海贼王5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B50226819E300D87DD3 /* 海贼王5.png */; };
+		CE0C0B90226819E300D87DD3 /* 海贼王7.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B51226819E300D87DD3 /* 海贼王7.png */; };
+		CE0C0B91226819E300D87DD3 /* 海贼王6.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B52226819E300D87DD3 /* 海贼王6.png */; };
+		CE0C0B92226819E300D87DD3 /* 海贼王2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B53226819E300D87DD3 /* 海贼王2.png */; };
+		CE0C0B93226819E300D87DD3 /* 海贼王3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B54226819E300D87DD3 /* 海贼王3.png */; };
+		CE0C0B94226819E300D87DD3 /* 海贼王1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B55226819E300D87DD3 /* 海贼王1.png */; };
+		CE0C0B95226819E300D87DD3 /* 海贼王0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B56226819E300D87DD3 /* 海贼王0.png */; };
+		CE0C0B96226819E300D87DD3 /* TableViewCell0.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B58226819E300D87DD3 /* TableViewCell0.m */; };
+		CE0C0B97226819E300D87DD3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B5C226819E300D87DD3 /* ViewController2.m */; };
+		CE0C0B98226819E300D87DD3 /* ViewController21.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B5F226819E300D87DD3 /* ViewController21.m */; };
+		CE0C0B99226819E300D87DD3 /* 犬夜叉3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B61226819E300D87DD3 /* 犬夜叉3.png */; };
+		CE0C0B9A226819E300D87DD3 /* 犬夜叉2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B62226819E300D87DD3 /* 犬夜叉2.png */; };
+		CE0C0B9B226819E300D87DD3 /* 犬夜叉0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B63226819E300D87DD3 /* 犬夜叉0.png */; };
+		CE0C0B9C226819E300D87DD3 /* 犬夜叉1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B64226819E300D87DD3 /* 犬夜叉1.png */; };
+		CE0C0B9D226819E300D87DD3 /* 犬夜叉4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B65226819E300D87DD3 /* 犬夜叉4.png */; };
+		CE0C0B9E226819E300D87DD3 /* TableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B68226819E300D87DD3 /* TableViewCell2.m */; };
+		CE0C0BA422681AA300D87DD3 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BA122681AA200D87DD3 /* BaseViewController.m */; };
+		CE0C0BA522681AA300D87DD3 /* UITabBar+TLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0BA222681AA200D87DD3 /* UITabBar+TLTabBar.m */; };
+		CE90153C2268828000A8D0B0 /* ViewController02.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90153B2268828000A8D0B0 /* ViewController02.m */; };
+		CE90153F2268834C00A8D0B0 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE90153E2268834C00A8D0B0 /* BaseNavigationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE0B4FE4226DCA9D001BC652 /* ViewController32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController32.h; sourceTree = "<group>"; };
+		CE0B4FE5226DCA9D001BC652 /* ViewController32.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController32.m; sourceTree = "<group>"; };
+		CE0C0AD82268101800D87DD3 /* TLTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TLTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C0AE42268101A00D87DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE0C0AF2226810F700D87DD3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE0C0AF4226810F700D87DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE0C0AF7226810F700D87DD3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0C0AF8226810F700D87DD3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE0C0AF9226810F700D87DD3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0C0AFF226817EF00D87DD3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE0C0B02226819E300D87DD3 /* ViewController31.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController31.h; sourceTree = "<group>"; };
+		CE0C0B03226819E300D87DD3 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		CE0C0B04226819E300D87DD3 /* ViewController31.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController31.m; sourceTree = "<group>"; };
+		CE0C0B05226819E300D87DD3 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		CE0C0B07226819E300D87DD3 /* 奥特曼4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奥特曼4.png"; sourceTree = "<group>"; };
+		CE0C0B08226819E300D87DD3 /* 奥特曼3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奥特曼3.png"; sourceTree = "<group>"; };
+		CE0C0B09226819E300D87DD3 /* 奥特曼2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奥特曼2.png"; sourceTree = "<group>"; };
+		CE0C0B0A226819E300D87DD3 /* 奥特曼0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奥特曼0.png"; sourceTree = "<group>"; };
+		CE0C0B0B226819E300D87DD3 /* 奥特曼1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "奥特曼1.png"; sourceTree = "<group>"; };
+		CE0C0B0D226819E300D87DD3 /* TableViewCell31.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell31.m; sourceTree = "<group>"; };
+		CE0C0B0E226819E300D87DD3 /* TableViewCell3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell3.m; sourceTree = "<group>"; };
+		CE0C0B0F226819E300D87DD3 /* TableViewCell31.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell31.h; sourceTree = "<group>"; };
+		CE0C0B10226819E300D87DD3 /* TableViewCell3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell3.h; sourceTree = "<group>"; };
+		CE0C0B13226819E300D87DD3 /* 火影忍者8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者8.png"; sourceTree = "<group>"; };
+		CE0C0B14226819E300D87DD3 /* 火影忍者9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者9.png"; sourceTree = "<group>"; };
+		CE0C0B15226819E300D87DD3 /* 火影忍者2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者2.png"; sourceTree = "<group>"; };
+		CE0C0B16226819E300D87DD3 /* 火影忍者3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者3.png"; sourceTree = "<group>"; };
+		CE0C0B17226819E300D87DD3 /* 火影忍者1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者1.png"; sourceTree = "<group>"; };
+		CE0C0B18226819E300D87DD3 /* 火影忍者0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者0.png"; sourceTree = "<group>"; };
+		CE0C0B19226819E300D87DD3 /* 火影忍者4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者4.png"; sourceTree = "<group>"; };
+		CE0C0B1A226819E300D87DD3 /* 火影忍者5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者5.png"; sourceTree = "<group>"; };
+		CE0C0B1B226819E300D87DD3 /* 火影忍者7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者7.png"; sourceTree = "<group>"; };
+		CE0C0B1C226819E300D87DD3 /* 火影忍者6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "火影忍者6.png"; sourceTree = "<group>"; };
+		CE0C0B1E226819E300D87DD3 /* ViewController11.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController11.m; sourceTree = "<group>"; };
+		CE0C0B1F226819E300D87DD3 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		CE0C0B20226819E300D87DD3 /* ViewController11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController11.h; sourceTree = "<group>"; };
+		CE0C0B21226819E300D87DD3 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		CE0C0B23226819E300D87DD3 /* TableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell1.h; sourceTree = "<group>"; };
+		CE0C0B24226819E300D87DD3 /* TableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell1.m; sourceTree = "<group>"; };
+		CE0C0B27226819E300D87DD3 /* TLFPSLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLFPSLable.m; sourceTree = "<group>"; };
+		CE0C0B28226819E300D87DD3 /* TLFPSLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLFPSLable.h; sourceTree = "<group>"; };
+		CE0C0B2A226819E300D87DD3 /* TLPanDirectionStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPanDirectionStyle.h; sourceTree = "<group>"; };
+		CE0C0B2B226819E300D87DD3 /* UIViewController+TLTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TLTransition.m"; sourceTree = "<group>"; };
+		CE0C0B2D226819E300D87DD3 /* TLTabTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTabTransitionDelegate.h; sourceTree = "<group>"; };
+		CE0C0B2E226819E300D87DD3 /* TLPushTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPushTransitionDelegate.m; sourceTree = "<group>"; };
+		CE0C0B2F226819E300D87DD3 /* TLPressTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPressTransitionDelegate.h; sourceTree = "<group>"; };
+		CE0C0B30226819E300D87DD3 /* TLTabTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLTabTransitionDelegate.m; sourceTree = "<group>"; };
+		CE0C0B31226819E300D87DD3 /* TLPushTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPushTransitionDelegate.h; sourceTree = "<group>"; };
+		CE0C0B32226819E300D87DD3 /* TLPressTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPressTransitionDelegate.m; sourceTree = "<group>"; };
+		CE0C0B35226819E300D87DD3 /* TLAnimationTabScrollStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAnimationTabScrollStyle.m; sourceTree = "<group>"; };
+		CE0C0B36226819E300D87DD3 /* TLAnimationTabScrollStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationTabScrollStyle.h; sourceTree = "<group>"; };
+		CE0C0B38226819E300D87DD3 /* TLAnimationUIViewFrameStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationUIViewFrameStyle.h; sourceTree = "<group>"; };
+		CE0C0B39226819E300D87DD3 /* TLAnimationAppStoreStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAnimationAppStoreStyle.m; sourceTree = "<group>"; };
+		CE0C0B3A226819E300D87DD3 /* TLAnimationWindowScaleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationWindowScaleStyle.h; sourceTree = "<group>"; };
+		CE0C0B3B226819E300D87DD3 /* TLAnimationUIViewFrameStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAnimationUIViewFrameStyle.m; sourceTree = "<group>"; };
+		CE0C0B3C226819E300D87DD3 /* TLAnimationAppStoreStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationAppStoreStyle.h; sourceTree = "<group>"; };
+		CE0C0B3D226819E300D87DD3 /* TLAnimationWindowScaleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAnimationWindowScaleStyle.m; sourceTree = "<group>"; };
+		CE0C0B3F226819E300D87DD3 /* TLAnimationBottomViewAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLAnimationBottomViewAlert.m; sourceTree = "<group>"; };
+		CE0C0B40226819E300D87DD3 /* TLAnimationBottomViewAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLAnimationBottomViewAlert.h; sourceTree = "<group>"; };
+		CE0C0B41226819E300D87DD3 /* UIViewController+TLTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TLTransition.h"; sourceTree = "<group>"; };
+		CE0C0B42226819E300D87DD3 /* TLTransitionAnimationStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLTransitionAnimationStyle.h; sourceTree = "<group>"; };
+		CE0C0B44226819E300D87DD3 /* TlImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TlImageTool.m; sourceTree = "<group>"; };
+		CE0C0B45226819E300D87DD3 /* TlImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TlImageTool.h; sourceTree = "<group>"; };
+		CE0C0B48226819E300D87DD3 /* ViewController01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController01.m; sourceTree = "<group>"; };
+		CE0C0B49226819E300D87DD3 /* ViewController0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController0.h; sourceTree = "<group>"; };
+		CE0C0B4A226819E300D87DD3 /* ViewController01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController01.h; sourceTree = "<group>"; };
+		CE0C0B4B226819E300D87DD3 /* ViewController0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController0.m; sourceTree = "<group>"; };
+		CE0C0B4D226819E300D87DD3 /* 海贼王8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王8.png"; sourceTree = "<group>"; };
+		CE0C0B4E226819E300D87DD3 /* 海贼王9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王9.png"; sourceTree = "<group>"; };
+		CE0C0B4F226819E300D87DD3 /* 海贼王4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王4.png"; sourceTree = "<group>"; };
+		CE0C0B50226819E300D87DD3 /* 海贼王5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王5.png"; sourceTree = "<group>"; };
+		CE0C0B51226819E300D87DD3 /* 海贼王7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王7.png"; sourceTree = "<group>"; };
+		CE0C0B52226819E300D87DD3 /* 海贼王6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王6.png"; sourceTree = "<group>"; };
+		CE0C0B53226819E300D87DD3 /* 海贼王2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王2.png"; sourceTree = "<group>"; };
+		CE0C0B54226819E300D87DD3 /* 海贼王3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王3.png"; sourceTree = "<group>"; };
+		CE0C0B55226819E300D87DD3 /* 海贼王1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王1.png"; sourceTree = "<group>"; };
+		CE0C0B56226819E300D87DD3 /* 海贼王0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王0.png"; sourceTree = "<group>"; };
+		CE0C0B58226819E300D87DD3 /* TableViewCell0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell0.m; sourceTree = "<group>"; };
+		CE0C0B59226819E300D87DD3 /* TableViewCell0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell0.h; sourceTree = "<group>"; };
+		CE0C0B5C226819E300D87DD3 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		CE0C0B5D226819E300D87DD3 /* ViewController21.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController21.h; sourceTree = "<group>"; };
+		CE0C0B5E226819E300D87DD3 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		CE0C0B5F226819E300D87DD3 /* ViewController21.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController21.m; sourceTree = "<group>"; };
+		CE0C0B61226819E300D87DD3 /* 犬夜叉3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "犬夜叉3.png"; sourceTree = "<group>"; };
+		CE0C0B62226819E300D87DD3 /* 犬夜叉2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "犬夜叉2.png"; sourceTree = "<group>"; };
+		CE0C0B63226819E300D87DD3 /* 犬夜叉0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "犬夜叉0.png"; sourceTree = "<group>"; };
+		CE0C0B64226819E300D87DD3 /* 犬夜叉1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "犬夜叉1.png"; sourceTree = "<group>"; };
+		CE0C0B65226819E300D87DD3 /* 犬夜叉4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "犬夜叉4.png"; sourceTree = "<group>"; };
+		CE0C0B67226819E300D87DD3 /* TableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell2.h; sourceTree = "<group>"; };
+		CE0C0B68226819E300D87DD3 /* TableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell2.m; sourceTree = "<group>"; };
+		CE0C0BA022681AA200D87DD3 /* UITabBar+TLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+TLTabBar.h"; sourceTree = "<group>"; };
+		CE0C0BA122681AA200D87DD3 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CE0C0BA222681AA200D87DD3 /* UITabBar+TLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+TLTabBar.m"; sourceTree = "<group>"; };
+		CE0C0BA322681AA200D87DD3 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CE90153A2268828000A8D0B0 /* ViewController02.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController02.h; sourceTree = "<group>"; };
+		CE90153B2268828000A8D0B0 /* ViewController02.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController02.m; sourceTree = "<group>"; };
+		CE90153D2268834C00A8D0B0 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		CE90153E2268834C00A8D0B0 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0C0AD52268101800D87DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE0C0ACF2268101800D87DD3 = {
+			isa = PBXGroup;
+			children = (
+				CE0C0ADA2268101800D87DD3 /* TLTransition */,
+				CE0C0AD92268101800D87DD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0C0AD92268101800D87DD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0AD82268101800D87DD3 /* TLTransition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0C0ADA2268101800D87DD3 /* TLTransition */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B9F22681AA200D87DD3 /* Base */,
+				CE0C0B25226819E300D87DD3 /* Tool */,
+				CE0C0B46226819E300D87DD3 /* Tabbar0 */,
+				CE0C0B11226819E300D87DD3 /* Tabbar1 */,
+				CE0C0B5A226819E300D87DD3 /* Tabbar2 */,
+				CE0C0B00226819E300D87DD3 /* Tabbar3 */,
+				CE0C0AF1226810F700D87DD3 /* SystemDoc */,
+				CE0C0AE42268101A00D87DD3 /* Assets.xcassets */,
+			);
+			path = TLTransition;
+			sourceTree = "<group>";
+		};
+		CE0C0AF1226810F700D87DD3 /* SystemDoc */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0AF2226810F700D87DD3 /* AppDelegate.h */,
+				CE0C0AF8226810F700D87DD3 /* AppDelegate.m */,
+				CE0C0AF3226810F700D87DD3 /* LaunchScreen.storyboard */,
+				CE0C0AF7226810F700D87DD3 /* main.m */,
+				CE0C0AF9226810F700D87DD3 /* Info.plist */,
+				CE0C0AFF226817EF00D87DD3 /* PrefixHeader.pch */,
+			);
+			path = SystemDoc;
+			sourceTree = "<group>";
+		};
+		CE0C0B00226819E300D87DD3 /* Tabbar3 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B01226819E300D87DD3 /* Contronller */,
+				CE0C0B06226819E300D87DD3 /* 奥特曼 */,
+				CE0C0B0C226819E300D87DD3 /* View */,
+			);
+			path = Tabbar3;
+			sourceTree = "<group>";
+		};
+		CE0C0B01226819E300D87DD3 /* Contronller */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B03226819E300D87DD3 /* ViewController3.h */,
+				CE0C0B05226819E300D87DD3 /* ViewController3.m */,
+				CE0C0B02226819E300D87DD3 /* ViewController31.h */,
+				CE0C0B04226819E300D87DD3 /* ViewController31.m */,
+				CE0B4FE4226DCA9D001BC652 /* ViewController32.h */,
+				CE0B4FE5226DCA9D001BC652 /* ViewController32.m */,
+			);
+			path = Contronller;
+			sourceTree = "<group>";
+		};
+		CE0C0B06226819E300D87DD3 /* 奥特曼 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B07226819E300D87DD3 /* 奥特曼4.png */,
+				CE0C0B08226819E300D87DD3 /* 奥特曼3.png */,
+				CE0C0B09226819E300D87DD3 /* 奥特曼2.png */,
+				CE0C0B0A226819E300D87DD3 /* 奥特曼0.png */,
+				CE0C0B0B226819E300D87DD3 /* 奥特曼1.png */,
+			);
+			path = "奥特曼";
+			sourceTree = "<group>";
+		};
+		CE0C0B0C226819E300D87DD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B10226819E300D87DD3 /* TableViewCell3.h */,
+				CE0C0B0E226819E300D87DD3 /* TableViewCell3.m */,
+				CE0C0B0F226819E300D87DD3 /* TableViewCell31.h */,
+				CE0C0B0D226819E300D87DD3 /* TableViewCell31.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0C0B11226819E300D87DD3 /* Tabbar1 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B12226819E300D87DD3 /* 火影忍者 */,
+				CE0C0B1D226819E300D87DD3 /* Contronller */,
+				CE0C0B22226819E300D87DD3 /* View */,
+			);
+			path = Tabbar1;
+			sourceTree = "<group>";
+		};
+		CE0C0B12226819E300D87DD3 /* 火影忍者 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B13226819E300D87DD3 /* 火影忍者8.png */,
+				CE0C0B14226819E300D87DD3 /* 火影忍者9.png */,
+				CE0C0B15226819E300D87DD3 /* 火影忍者2.png */,
+				CE0C0B16226819E300D87DD3 /* 火影忍者3.png */,
+				CE0C0B17226819E300D87DD3 /* 火影忍者1.png */,
+				CE0C0B18226819E300D87DD3 /* 火影忍者0.png */,
+				CE0C0B19226819E300D87DD3 /* 火影忍者4.png */,
+				CE0C0B1A226819E300D87DD3 /* 火影忍者5.png */,
+				CE0C0B1B226819E300D87DD3 /* 火影忍者7.png */,
+				CE0C0B1C226819E300D87DD3 /* 火影忍者6.png */,
+			);
+			path = "火影忍者";
+			sourceTree = "<group>";
+		};
+		CE0C0B1D226819E300D87DD3 /* Contronller */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B21226819E300D87DD3 /* ViewController1.h */,
+				CE0C0B1F226819E300D87DD3 /* ViewController1.m */,
+				CE0C0B20226819E300D87DD3 /* ViewController11.h */,
+				CE0C0B1E226819E300D87DD3 /* ViewController11.m */,
+			);
+			path = Contronller;
+			sourceTree = "<group>";
+		};
+		CE0C0B22226819E300D87DD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B23226819E300D87DD3 /* TableViewCell1.h */,
+				CE0C0B24226819E300D87DD3 /* TableViewCell1.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0C0B25226819E300D87DD3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B43226819E300D87DD3 /* TLImage */,
+				CE0C0B26226819E300D87DD3 /* TLFPSLable */,
+				CE0C0B29226819E300D87DD3 /* TLTransitionTool */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CE0C0B26226819E300D87DD3 /* TLFPSLable */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B28226819E300D87DD3 /* TLFPSLable.h */,
+				CE0C0B27226819E300D87DD3 /* TLFPSLable.m */,
+			);
+			path = TLFPSLable;
+			sourceTree = "<group>";
+		};
+		CE0C0B29226819E300D87DD3 /* TLTransitionTool */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B2A226819E300D87DD3 /* TLPanDirectionStyle.h */,
+				CE0C0B42226819E300D87DD3 /* TLTransitionAnimationStyle.h */,
+				CE0C0B41226819E300D87DD3 /* UIViewController+TLTransition.h */,
+				CE0C0B2B226819E300D87DD3 /* UIViewController+TLTransition.m */,
+				CE0C0B2C226819E300D87DD3 /* PercentDrivenInteractiveDelegate */,
+				CE0C0B33226819E300D87DD3 /* TLTransitionAnimation */,
+			);
+			path = TLTransitionTool;
+			sourceTree = "<group>";
+		};
+		CE0C0B2C226819E300D87DD3 /* PercentDrivenInteractiveDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B31226819E300D87DD3 /* TLPushTransitionDelegate.h */,
+				CE0C0B2E226819E300D87DD3 /* TLPushTransitionDelegate.m */,
+				CE0C0B2F226819E300D87DD3 /* TLPressTransitionDelegate.h */,
+				CE0C0B32226819E300D87DD3 /* TLPressTransitionDelegate.m */,
+				CE0C0B2D226819E300D87DD3 /* TLTabTransitionDelegate.h */,
+				CE0C0B30226819E300D87DD3 /* TLTabTransitionDelegate.m */,
+			);
+			path = PercentDrivenInteractiveDelegate;
+			sourceTree = "<group>";
+		};
+		CE0C0B33226819E300D87DD3 /* TLTransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B34226819E300D87DD3 /* tabAnimation */,
+				CE0C0B37226819E300D87DD3 /* pushAnimation */,
+				CE0C0B3E226819E300D87DD3 /* pressAnimation */,
+			);
+			path = TLTransitionAnimation;
+			sourceTree = "<group>";
+		};
+		CE0C0B34226819E300D87DD3 /* tabAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B36226819E300D87DD3 /* TLAnimationTabScrollStyle.h */,
+				CE0C0B35226819E300D87DD3 /* TLAnimationTabScrollStyle.m */,
+			);
+			path = tabAnimation;
+			sourceTree = "<group>";
+		};
+		CE0C0B37226819E300D87DD3 /* pushAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B38226819E300D87DD3 /* TLAnimationUIViewFrameStyle.h */,
+				CE0C0B3B226819E300D87DD3 /* TLAnimationUIViewFrameStyle.m */,
+				CE0C0B3A226819E300D87DD3 /* TLAnimationWindowScaleStyle.h */,
+				CE0C0B3D226819E300D87DD3 /* TLAnimationWindowScaleStyle.m */,
+				CE0C0B3C226819E300D87DD3 /* TLAnimationAppStoreStyle.h */,
+				CE0C0B39226819E300D87DD3 /* TLAnimationAppStoreStyle.m */,
+			);
+			path = pushAnimation;
+			sourceTree = "<group>";
+		};
+		CE0C0B3E226819E300D87DD3 /* pressAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B40226819E300D87DD3 /* TLAnimationBottomViewAlert.h */,
+				CE0C0B3F226819E300D87DD3 /* TLAnimationBottomViewAlert.m */,
+			);
+			path = pressAnimation;
+			sourceTree = "<group>";
+		};
+		CE0C0B43226819E300D87DD3 /* TLImage */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B45226819E300D87DD3 /* TlImageTool.h */,
+				CE0C0B44226819E300D87DD3 /* TlImageTool.m */,
+			);
+			path = TLImage;
+			sourceTree = "<group>";
+		};
+		CE0C0B46226819E300D87DD3 /* Tabbar0 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B47226819E300D87DD3 /* Contronller */,
+				CE0C0B4C226819E300D87DD3 /* 海贼王 */,
+				CE0C0B57226819E300D87DD3 /* View */,
+			);
+			path = Tabbar0;
+			sourceTree = "<group>";
+		};
+		CE0C0B47226819E300D87DD3 /* Contronller */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B49226819E300D87DD3 /* ViewController0.h */,
+				CE0C0B4B226819E300D87DD3 /* ViewController0.m */,
+				CE0C0B4A226819E300D87DD3 /* ViewController01.h */,
+				CE0C0B48226819E300D87DD3 /* ViewController01.m */,
+				CE90153A2268828000A8D0B0 /* ViewController02.h */,
+				CE90153B2268828000A8D0B0 /* ViewController02.m */,
+			);
+			path = Contronller;
+			sourceTree = "<group>";
+		};
+		CE0C0B4C226819E300D87DD3 /* 海贼王 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B4D226819E300D87DD3 /* 海贼王8.png */,
+				CE0C0B4E226819E300D87DD3 /* 海贼王9.png */,
+				CE0C0B4F226819E300D87DD3 /* 海贼王4.png */,
+				CE0C0B50226819E300D87DD3 /* 海贼王5.png */,
+				CE0C0B51226819E300D87DD3 /* 海贼王7.png */,
+				CE0C0B52226819E300D87DD3 /* 海贼王6.png */,
+				CE0C0B53226819E300D87DD3 /* 海贼王2.png */,
+				CE0C0B54226819E300D87DD3 /* 海贼王3.png */,
+				CE0C0B55226819E300D87DD3 /* 海贼王1.png */,
+				CE0C0B56226819E300D87DD3 /* 海贼王0.png */,
+			);
+			path = "海贼王";
+			sourceTree = "<group>";
+		};
+		CE0C0B57226819E300D87DD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B59226819E300D87DD3 /* TableViewCell0.h */,
+				CE0C0B58226819E300D87DD3 /* TableViewCell0.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0C0B5A226819E300D87DD3 /* Tabbar2 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B5B226819E300D87DD3 /* Contronller */,
+				CE0C0B60226819E300D87DD3 /* 犬夜叉 */,
+				CE0C0B66226819E300D87DD3 /* View */,
+			);
+			path = Tabbar2;
+			sourceTree = "<group>";
+		};
+		CE0C0B5B226819E300D87DD3 /* Contronller */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B5E226819E300D87DD3 /* ViewController2.h */,
+				CE0C0B5C226819E300D87DD3 /* ViewController2.m */,
+				CE0C0B5D226819E300D87DD3 /* ViewController21.h */,
+				CE0C0B5F226819E300D87DD3 /* ViewController21.m */,
+			);
+			path = Contronller;
+			sourceTree = "<group>";
+		};
+		CE0C0B60226819E300D87DD3 /* 犬夜叉 */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B61226819E300D87DD3 /* 犬夜叉3.png */,
+				CE0C0B62226819E300D87DD3 /* 犬夜叉2.png */,
+				CE0C0B63226819E300D87DD3 /* 犬夜叉0.png */,
+				CE0C0B64226819E300D87DD3 /* 犬夜叉1.png */,
+				CE0C0B65226819E300D87DD3 /* 犬夜叉4.png */,
+			);
+			path = "犬夜叉";
+			sourceTree = "<group>";
+		};
+		CE0C0B66226819E300D87DD3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0B67226819E300D87DD3 /* TableViewCell2.h */,
+				CE0C0B68226819E300D87DD3 /* TableViewCell2.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0C0B9F22681AA200D87DD3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C0BA322681AA200D87DD3 /* BaseViewController.h */,
+				CE0C0BA122681AA200D87DD3 /* BaseViewController.m */,
+				CE90153D2268834C00A8D0B0 /* BaseNavigationController.h */,
+				CE90153E2268834C00A8D0B0 /* BaseNavigationController.m */,
+				CE0C0BA022681AA200D87DD3 /* UITabBar+TLTabBar.h */,
+				CE0C0BA222681AA200D87DD3 /* UITabBar+TLTabBar.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0C0AD72268101800D87DD3 /* TLTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0C0AEE2268101A00D87DD3 /* Build configuration list for PBXNativeTarget "TLTransition" */;
+			buildPhases = (
+				CE0C0AD42268101800D87DD3 /* Sources */,
+				CE0C0AD52268101800D87DD3 /* Frameworks */,
+				CE0C0AD62268101800D87DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TLTransition;
+			productName = TLTransition;
+			productReference = CE0C0AD82268101800D87DD3 /* TLTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0C0AD02268101800D87DD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = tanglei;
+				TargetAttributes = {
+					CE0C0AD72268101800D87DD3 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = CE0C0AD32268101800D87DD3 /* Build configuration list for PBXProject "TLTransition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE0C0ACF2268101800D87DD3;
+			productRefGroup = CE0C0AD92268101800D87DD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0C0AD72268101800D87DD3 /* TLTransition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE0C0AD62268101800D87DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0C0B94226819E300D87DD3 /* 海贼王1.png in Resources */,
+				CE0C0B73226819E300D87DD3 /* 火影忍者9.png in Resources */,
+				CE0C0B8D226819E300D87DD3 /* 海贼王9.png in Resources */,
+				CE0C0B6B226819E300D87DD3 /* 奥特曼4.png in Resources */,
+				CE0C0AE52268101A00D87DD3 /* Assets.xcassets in Resources */,
+				CE0C0B9B226819E300D87DD3 /* 犬夜叉0.png in Resources */,
+				CE0C0B72226819E300D87DD3 /* 火影忍者8.png in Resources */,
+				CE0C0B6E226819E300D87DD3 /* 奥特曼0.png in Resources */,
+				CE0C0B92226819E300D87DD3 /* 海贼王2.png in Resources */,
+				CE0C0B78226819E300D87DD3 /* 火影忍者4.png in Resources */,
+				CE0C0B77226819E300D87DD3 /* 火影忍者0.png in Resources */,
+				CE0C0B93226819E300D87DD3 /* 海贼王3.png in Resources */,
+				CE0C0B7A226819E300D87DD3 /* 火影忍者7.png in Resources */,
+				CE0C0B99226819E300D87DD3 /* 犬夜叉3.png in Resources */,
+				CE0C0B6D226819E300D87DD3 /* 奥特曼2.png in Resources */,
+				CE0C0B90226819E300D87DD3 /* 海贼王7.png in Resources */,
+				CE0C0B8C226819E300D87DD3 /* 海贼王8.png in Resources */,
+				CE0C0B8E226819E300D87DD3 /* 海贼王4.png in Resources */,
+				CE0C0B95226819E300D87DD3 /* 海贼王0.png in Resources */,
+				CE0C0AFA226810F700D87DD3 /* LaunchScreen.storyboard in Resources */,
+				CE0C0B91226819E300D87DD3 /* 海贼王6.png in Resources */,
+				CE0C0B6F226819E300D87DD3 /* 奥特曼1.png in Resources */,
+				CE0C0B7B226819E300D87DD3 /* 火影忍者6.png in Resources */,
+				CE0C0B8F226819E300D87DD3 /* 海贼王5.png in Resources */,
+				CE0C0B75226819E300D87DD3 /* 火影忍者3.png in Resources */,
+				CE0C0B9D226819E300D87DD3 /* 犬夜叉4.png in Resources */,
+				CE0C0B6C226819E300D87DD3 /* 奥特曼3.png in Resources */,
+				CE0C0B9A226819E300D87DD3 /* 犬夜叉2.png in Resources */,
+				CE0C0B74226819E300D87DD3 /* 火影忍者2.png in Resources */,
+				CE0C0B9C226819E300D87DD3 /* 犬夜叉1.png in Resources */,
+				CE0C0B76226819E300D87DD3 /* 火影忍者1.png in Resources */,
+				CE0C0B79226819E300D87DD3 /* 火影忍者5.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0C0AD42268101800D87DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE90153C2268828000A8D0B0 /* ViewController02.m in Sources */,
+				CE0C0B88226819E300D87DD3 /* TLAnimationBottomViewAlert.m in Sources */,
+				CE0C0B8A226819E300D87DD3 /* ViewController01.m in Sources */,
+				CE0C0B7E226819E300D87DD3 /* TableViewCell1.m in Sources */,
+				CE0C0B82226819E300D87DD3 /* TLTabTransitionDelegate.m in Sources */,
+				CE0C0AFD226810F700D87DD3 /* AppDelegate.m in Sources */,
+				CE0C0B97226819E300D87DD3 /* ViewController2.m in Sources */,
+				CE0C0B71226819E300D87DD3 /* TableViewCell3.m in Sources */,
+				CE0C0B85226819E300D87DD3 /* TLAnimationAppStoreStyle.m in Sources */,
+				CE0C0B69226819E300D87DD3 /* ViewController31.m in Sources */,
+				CE0C0B6A226819E300D87DD3 /* ViewController3.m in Sources */,
+				CE0C0B7D226819E300D87DD3 /* ViewController1.m in Sources */,
+				CE0C0B89226819E300D87DD3 /* TlImageTool.m in Sources */,
+				CE0C0B8B226819E300D87DD3 /* ViewController0.m in Sources */,
+				CE90153F2268834C00A8D0B0 /* BaseNavigationController.m in Sources */,
+				CE0C0B7F226819E300D87DD3 /* TLFPSLable.m in Sources */,
+				CE0C0B70226819E300D87DD3 /* TableViewCell31.m in Sources */,
+				CE0C0B98226819E300D87DD3 /* ViewController21.m in Sources */,
+				CE0C0B9E226819E300D87DD3 /* TableViewCell2.m in Sources */,
+				CE0C0B86226819E300D87DD3 /* TLAnimationUIViewFrameStyle.m in Sources */,
+				CE0C0B87226819E300D87DD3 /* TLAnimationWindowScaleStyle.m in Sources */,
+				CE0C0BA422681AA300D87DD3 /* BaseViewController.m in Sources */,
+				CE0C0AFC226810F700D87DD3 /* main.m in Sources */,
+				CE0C0B7C226819E300D87DD3 /* ViewController11.m in Sources */,
+				CE0C0B84226819E300D87DD3 /* TLAnimationTabScrollStyle.m in Sources */,
+				CE0B4FE6226DCA9D001BC652 /* ViewController32.m in Sources */,
+				CE0C0BA522681AA300D87DD3 /* UITabBar+TLTabBar.m in Sources */,
+				CE0C0B83226819E300D87DD3 /* TLPressTransitionDelegate.m in Sources */,
+				CE0C0B80226819E300D87DD3 /* UIViewController+TLTransition.m in Sources */,
+				CE0C0B96226819E300D87DD3 /* TableViewCell0.m in Sources */,
+				CE0C0B81226819E300D87DD3 /* TLPushTransitionDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE0C0AF3226810F700D87DD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0C0AF4226810F700D87DD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE0C0AEC2268101A00D87DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE0C0AED2268101A00D87DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE0C0AEF2268101A00D87DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = USY78CHE7U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//TLTransition/SystemDoc/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/TLTransition/SystemDoc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mac.TLTransition1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE0C0AF02268101A00D87DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = USY78CHE7U;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//TLTransition/SystemDoc/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/TLTransition/SystemDoc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Mac.TLTransition1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0C0AD32268101800D87DD3 /* Build configuration list for PBXProject "TLTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C0AEC2268101A00D87DD3 /* Debug */,
+				CE0C0AED2268101A00D87DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0C0AEE2268101A00D87DD3 /* Build configuration list for PBXNativeTarget "TLTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C0AEF2268101A00D87DD3 /* Debug */,
+				CE0C0AF02268101A00D87DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0C0AD02268101800D87DD3 /* Project object */;
+}
