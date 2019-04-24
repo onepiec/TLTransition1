@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic ,strong)UIButton       *btn;
 @property (nonatomic ,strong)UILabel        *titleLab;
 @property (nonatomic ,strong)UILabel        *infLab;
-@property (nonatomic ,assign)BOOL           endTouchesBegan;//如果重按直接回调，轻按则先改变scale再回调
+@property (nonatomic ,assign)BOOL           endTouchesBegan;//如果长按直接回调，否则先改变scale再回调
 @property (nonatomic ,copy)void(^block)(void);
 
 - (void)setDic:(NSDictionary *)dic;

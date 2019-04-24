@@ -50,12 +50,17 @@
 
     NSLog(@"开始");
     self.endTouchesBegan = NO;
+    
+    
     [UIView animateWithDuration:0.2 animations:^{
         self.btn.transform = CGAffineTransformMakeScale(0.97, 0.97);
     } completion:^(BOOL finished) {
-        self.endTouchesBegan = YES;
+        
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            self.endTouchesBegan = YES;
+        });
+        
     }];
-    
 }
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
@@ -65,18 +70,16 @@
             self.block();
         }
     }else{
-        //completion是动画开始实行后就调用，为了保证动画完成后就调用，加入延迟函数
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:0.2 animations:^{
+            self.btn.transform = CGAffineTransformMakeScale(0.97, 0.97);
+        } completion:^(BOOL finished) {
             
-            [UIView animateWithDuration:0.2 animations:^{
-                self.btn.transform = CGAffineTransformMakeScale(0.97, 0.97);
-            } completion:^(BOOL finished) {
-                
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 if (self.block) {
                     self.block();
                 }
-            }];
-        });
+            });
+        }];
     }
 }
 
