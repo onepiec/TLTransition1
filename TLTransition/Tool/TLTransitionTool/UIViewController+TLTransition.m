@@ -87,6 +87,8 @@ static char * const panDirectionTypesKey = "panDirectionTypesKey";
         self.navigationController.interactivePopGestureRecognizer.delegate = [TLPushTransitionDelegate shareInstance];
         self.navigationController.delegate = [TLPushTransitionDelegate shareInstance];
         [TLPushTransitionDelegate shareInstance].popController = self;
+    }else{
+
     }
     [self tlViewWillAppear:animated];
 }

@@ -100,7 +100,6 @@
 
     } completion:^(BOOL finished) {
         
-//        NSLog(@"哈哈哈哈哈哈哈哈哈哈或");
         toView.alpha = 1;
         toView.userInteractionEnabled = YES;
         for (UIView *fromSubViewCopy in fromSubViewCopyArr) {

@@ -81,7 +81,7 @@
 - (void)addPanGestureForViewController:(UIViewController *)viewController directionTypes:(TLPanDirectionType)directionTypes{
     
     if (0 == directionTypes) return;
-    
+    self.startDirection = TLPanDirectionNone;
     viewController.panDirectionTypes = directionTypes;
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(doGestureRecognizerDisMiss:)];
     pan.delegate = self;

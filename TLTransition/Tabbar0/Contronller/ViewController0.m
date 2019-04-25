@@ -9,7 +9,6 @@
 #import "ViewController0.h"
 #import "ViewController01.h"
 #import "TableViewCell0.h"
-//#import "UIViewController+TLTransition.h"
 
 @interface ViewController0 ()<UITableViewDelegate ,UITableViewDataSource>
 
@@ -21,6 +20,7 @@
 @property (nonatomic ,weak)UILabel        *titleLab;
 @property (nonatomic ,weak)UILabel        *infLab;
 
+@property (nonatomic ,assign)BOOL           userEnabled;
 @property (nonatomic ,assign)BOOL           hideStatus;
 @end
 
@@ -36,7 +36,7 @@
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-
+    
     self.hideStatus = NO;
     [UIView animateWithDuration:0.5 animations:^{
         [self setNeedsStatusBarAppearanceUpdate];
@@ -63,6 +63,7 @@
     
     // Do any additional setup after loading the view.
     self.hideNavBar = YES;
+    self.userEnabled = YES;
     
     self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(10, 20 +EXStatusHeight, TLDeviceWidth -20, TLDeviceHeight -(TabBarHeight +20 +EXStatusHeight)) style:UITableViewStyleGrouped];
     self.tableView.estimatedRowHeight = 0;
@@ -124,11 +125,12 @@
     
     cell.block = ^{
         SS(strongSelf);
-    
+        
+        if (!strongSelf.userEnabled) {
+            return;
+        }
         strongSelf.hideStatus = YES;
-        [UIView animateWithDuration:0.5 animations:^{
-            [strongSelf setNeedsStatusBarAppearanceUpdate];
-        }];
+        strongSelf.userEnabled = NO;
         
         strongSelf.btn = weakCell.btn;
         strongSelf.titleLab = weakCell.titleLab;
@@ -141,12 +143,11 @@
         vc.inf = dic[@"inf"];
         strongSelf.selectImageStr = dic[@"img"];
         vc.push = YES;
-        [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
-        NSLog(@"哈哈哈哈哈哈哈哈哈哈或");
+
         [strongSelf.navigationController tlPushViewController:vc tlAnimationType:TLAnimationAppStore];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW,(int64_t)(1.0* NSEC_PER_SEC)),dispatch_get_main_queue(),^{
-            
-            [[UIApplication sharedApplication] endIgnoringInteractionEvents];
+
+            strongSelf.userEnabled = YES;
             strongSelf.btn.transform = CGAffineTransformIdentity;
         });        
 

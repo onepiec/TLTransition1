@@ -27,16 +27,21 @@
 
 -(BOOL)prefersStatusBarHidden{
     
-    if (self.push) {
-        return YES;
-    }else{
-        return self.hideStatus;
-    }
-    
+    return self.hideStatus;
 }
 - (UIStatusBarAnimation)preferredStatusBarUpdateAnimation{
     
     return UIStatusBarAnimationSlide;
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (self.push) {
+        self.hideStatus = YES;
+        [UIView animateWithDuration:0.5 animations:^{
+            
+            [self setNeedsStatusBarAppearanceUpdate];
+        }];
+    }
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -145,6 +150,7 @@
     
     self.push = NO;
     [self.navigationController tlPushViewController:[ViewController02 new] tlAnimationType:TLAnimationNone];
+    self.hideStatus = NO;
 }
 - (NSArray *_Nonnull)tl_transitionUIViewFrameViews{
     return @[self.contentImgView,self.titleLab,self.infLab,self.contentLab];

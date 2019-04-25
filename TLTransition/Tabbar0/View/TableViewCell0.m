@@ -66,6 +66,7 @@
     
     NSLog(@"结束");
     if (self.endTouchesBegan) {
+        
         if (self.block) {
             self.block();
         }
@@ -73,13 +74,14 @@
         [UIView animateWithDuration:0.2 animations:^{
             self.btn.transform = CGAffineTransformMakeScale(0.97, 0.97);
         } completion:^(BOOL finished) {
-            
+
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 if (self.block) {
                     self.block();
                 }
             });
         }];
+
     }
 }
 

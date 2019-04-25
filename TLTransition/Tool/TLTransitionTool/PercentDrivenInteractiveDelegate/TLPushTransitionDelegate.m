@@ -99,6 +99,7 @@
     
     if (0 == directionTypes) return;
     
+    self.startDirection = TLPanDirectionNone;
     viewController.panDirectionTypes = directionTypes;
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(doGestureRecognizerPop:)];
     pan.delegate = self;
