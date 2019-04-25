@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 //转场动画涉及的视图数组
 - (NSArray *_Nonnull)tl_transitionUIViewFrameViews;
 
-//TLTransition转场的图片
+//AppStore转场的图片
 - (NSString *_Nonnull)tl_transitionUIViewImage;
 @end
 

@@ -86,10 +86,10 @@
     
     UIView *bgView = [[UIView alloc]init];
     bgView.frame = CGRectMake(0, 0, TLDeviceWidth -20, 50);
-    
+//    仿AppStore
     UILabel *lab = [[UILabel alloc]init];
     lab.frame = bgView.bounds;
-    lab.text = @"仿照TLTransition动画";
+    lab.text = @"仿照AppStore动画";
     lab.font = [UIFont systemFontOfSize:15];
     [bgView addSubview:lab];
     return bgView;

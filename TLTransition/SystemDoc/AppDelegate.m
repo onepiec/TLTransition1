@@ -46,7 +46,7 @@
     
     UITabBarController *tabBarVC = [UITabBarController new];
     tabBarVC.viewControllers = @[Nav0, Nav1, Nav2, Nav3];
-    NSArray *titles = @[@"仿TLTransition", @"视图位移", @"视图缩小", @"仿抖音评论"];
+    NSArray *titles = @[@"仿AppStore", @"视图位移", @"视图缩小", @"仿抖音评论"];
     NSArray *normalImages = @[@"tabbar0", @"tabbar1", @"tabbar2", @"tabbar3"];
     NSArray *highlightImages = @[@"tabbarSelect0", @"tabbarSelect1", @"tabbarSelect2", @"tabbarSelect3"];
     

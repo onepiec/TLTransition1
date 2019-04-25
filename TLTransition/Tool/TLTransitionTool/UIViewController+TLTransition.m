@@ -59,7 +59,7 @@ static char * const panDirectionTypesKey = "panDirectionTypesKey";
     }
     
     SEL originalSelector1 = @selector(viewWillAppear:);
-    SEL swizzledSelector1 = @selector(tlViewWillAppear:);
+    SEL swizzledSelector1 = @selector(swizzViewWillAppear:);
     
     Method originalMethod1 = class_getInstanceMethod(class, originalSelector1);
     Method swizzledMethod1 = class_getInstanceMethod(class, swizzledSelector1);
@@ -79,7 +79,7 @@ static char * const panDirectionTypesKey = "panDirectionTypesKey";
         method_exchangeImplementations(originalMethod1, swizzledMethod1);
     }
 }
-- (void)tlViewWillAppear:(BOOL)animated{
+- (void)swizzViewWillAppear:(BOOL)animated{
     
     
     if (TLAnimationUIViewFrame == self.animationType || TLAnimationWindowScale == self.animationType || TLAnimationAppStore == self.animationType) {
@@ -90,7 +90,7 @@ static char * const panDirectionTypesKey = "panDirectionTypesKey";
     }else{
 
     }
-    [self tlViewWillAppear:animated];
+    [self swizzViewWillAppear:animated];
 }
 - (void)swizzPresentViewController:(UIViewController *)viewControllerToPresent animated:(BOOL)flag completion:(void (^ __nullable)(void))completion{
     
