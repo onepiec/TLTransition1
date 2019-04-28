@@ -39,7 +39,7 @@
     BaseViewController *vc2 = [NSClassFromString(@"ViewController2") new];
     BaseViewController *vc3 = [NSClassFromString(@"ViewController3") new];
     
-    UINavigationController *Nav0 = [[BaseNavigationController alloc] initWithRootViewController:vc0];
+    BaseNavigationController *Nav0 = [[BaseNavigationController alloc] initWithRootViewController:vc0];
     BaseNavigationController *Nav1 = [[BaseNavigationController alloc] initWithRootViewController:vc1];
     BaseNavigationController *Nav2 = [[BaseNavigationController alloc] initWithRootViewController:vc2];
     BaseNavigationController *Nav3 = [[BaseNavigationController alloc] initWithRootViewController:vc3];

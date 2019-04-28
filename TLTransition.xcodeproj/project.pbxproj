@@ -47,16 +47,6 @@
 		CE0C0B89226819E300D87DD3 /* TlImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B44226819E300D87DD3 /* TlImageTool.m */; };
 		CE0C0B8A226819E300D87DD3 /* ViewController01.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B48226819E300D87DD3 /* ViewController01.m */; };
 		CE0C0B8B226819E300D87DD3 /* ViewController0.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B4B226819E300D87DD3 /* ViewController0.m */; };
-		CE0C0B8C226819E300D87DD3 /* 海贼王8.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B4D226819E300D87DD3 /* 海贼王8.png */; };
-		CE0C0B8D226819E300D87DD3 /* 海贼王9.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B4E226819E300D87DD3 /* 海贼王9.png */; };
-		CE0C0B8E226819E300D87DD3 /* 海贼王4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B4F226819E300D87DD3 /* 海贼王4.png */; };
-		CE0C0B8F226819E300D87DD3 /* 海贼王5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B50226819E300D87DD3 /* 海贼王5.png */; };
-		CE0C0B90226819E300D87DD3 /* 海贼王7.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B51226819E300D87DD3 /* 海贼王7.png */; };
-		CE0C0B91226819E300D87DD3 /* 海贼王6.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B52226819E300D87DD3 /* 海贼王6.png */; };
-		CE0C0B92226819E300D87DD3 /* 海贼王2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B53226819E300D87DD3 /* 海贼王2.png */; };
-		CE0C0B93226819E300D87DD3 /* 海贼王3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B54226819E300D87DD3 /* 海贼王3.png */; };
-		CE0C0B94226819E300D87DD3 /* 海贼王1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B55226819E300D87DD3 /* 海贼王1.png */; };
-		CE0C0B95226819E300D87DD3 /* 海贼王0.png in Resources */ = {isa = PBXBuildFile; fileRef = CE0C0B56226819E300D87DD3 /* 海贼王0.png */; };
 		CE0C0B96226819E300D87DD3 /* TableViewCell0.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B58226819E300D87DD3 /* TableViewCell0.m */; };
 		CE0C0B97226819E300D87DD3 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B5C226819E300D87DD3 /* ViewController2.m */; };
 		CE0C0B98226819E300D87DD3 /* ViewController21.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C0B5F226819E300D87DD3 /* ViewController21.m */; };
@@ -140,16 +130,6 @@
 		CE0C0B49226819E300D87DD3 /* ViewController0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController0.h; sourceTree = "<group>"; };
 		CE0C0B4A226819E300D87DD3 /* ViewController01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController01.h; sourceTree = "<group>"; };
 		CE0C0B4B226819E300D87DD3 /* ViewController0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController0.m; sourceTree = "<group>"; };
-		CE0C0B4D226819E300D87DD3 /* 海贼王8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王8.png"; sourceTree = "<group>"; };
-		CE0C0B4E226819E300D87DD3 /* 海贼王9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王9.png"; sourceTree = "<group>"; };
-		CE0C0B4F226819E300D87DD3 /* 海贼王4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王4.png"; sourceTree = "<group>"; };
-		CE0C0B50226819E300D87DD3 /* 海贼王5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王5.png"; sourceTree = "<group>"; };
-		CE0C0B51226819E300D87DD3 /* 海贼王7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王7.png"; sourceTree = "<group>"; };
-		CE0C0B52226819E300D87DD3 /* 海贼王6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王6.png"; sourceTree = "<group>"; };
-		CE0C0B53226819E300D87DD3 /* 海贼王2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王2.png"; sourceTree = "<group>"; };
-		CE0C0B54226819E300D87DD3 /* 海贼王3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王3.png"; sourceTree = "<group>"; };
-		CE0C0B55226819E300D87DD3 /* 海贼王1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王1.png"; sourceTree = "<group>"; };
-		CE0C0B56226819E300D87DD3 /* 海贼王0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "海贼王0.png"; sourceTree = "<group>"; };
 		CE0C0B58226819E300D87DD3 /* TableViewCell0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell0.m; sourceTree = "<group>"; };
 		CE0C0B59226819E300D87DD3 /* TableViewCell0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell0.h; sourceTree = "<group>"; };
 		CE0C0B5C226819E300D87DD3 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
@@ -420,7 +400,6 @@
 			isa = PBXGroup;
 			children = (
 				CE0C0B47226819E300D87DD3 /* Contronller */,
-				CE0C0B4C226819E300D87DD3 /* 海贼王 */,
 				CE0C0B57226819E300D87DD3 /* View */,
 			);
 			path = Tabbar0;
@@ -437,23 +416,6 @@
 				CE90153B2268828000A8D0B0 /* ViewController02.m */,
 			);
 			path = Contronller;
-			sourceTree = "<group>";
-		};
-		CE0C0B4C226819E300D87DD3 /* 海贼王 */ = {
-			isa = PBXGroup;
-			children = (
-				CE0C0B4D226819E300D87DD3 /* 海贼王8.png */,
-				CE0C0B4E226819E300D87DD3 /* 海贼王9.png */,
-				CE0C0B4F226819E300D87DD3 /* 海贼王4.png */,
-				CE0C0B50226819E300D87DD3 /* 海贼王5.png */,
-				CE0C0B51226819E300D87DD3 /* 海贼王7.png */,
-				CE0C0B52226819E300D87DD3 /* 海贼王6.png */,
-				CE0C0B53226819E300D87DD3 /* 海贼王2.png */,
-				CE0C0B54226819E300D87DD3 /* 海贼王3.png */,
-				CE0C0B55226819E300D87DD3 /* 海贼王1.png */,
-				CE0C0B56226819E300D87DD3 /* 海贼王0.png */,
-			);
-			path = "海贼王";
 			sourceTree = "<group>";
 		};
 		CE0C0B57226819E300D87DD3 /* View */ = {
@@ -577,30 +539,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0C0B94226819E300D87DD3 /* 海贼王1.png in Resources */,
 				CE0C0B73226819E300D87DD3 /* 火影忍者9.png in Resources */,
-				CE0C0B8D226819E300D87DD3 /* 海贼王9.png in Resources */,
 				CE0C0B6B226819E300D87DD3 /* 奥特曼4.png in Resources */,
 				CE0C0AE52268101A00D87DD3 /* Assets.xcassets in Resources */,
 				CE0C0B9B226819E300D87DD3 /* 犬夜叉0.png in Resources */,
 				CE0C0B72226819E300D87DD3 /* 火影忍者8.png in Resources */,
 				CE0C0B6E226819E300D87DD3 /* 奥特曼0.png in Resources */,
-				CE0C0B92226819E300D87DD3 /* 海贼王2.png in Resources */,
 				CE0C0B78226819E300D87DD3 /* 火影忍者4.png in Resources */,
 				CE0C0B77226819E300D87DD3 /* 火影忍者0.png in Resources */,
-				CE0C0B93226819E300D87DD3 /* 海贼王3.png in Resources */,
 				CE0C0B7A226819E300D87DD3 /* 火影忍者7.png in Resources */,
 				CE0C0B99226819E300D87DD3 /* 犬夜叉3.png in Resources */,
 				CE0C0B6D226819E300D87DD3 /* 奥特曼2.png in Resources */,
-				CE0C0B90226819E300D87DD3 /* 海贼王7.png in Resources */,
-				CE0C0B8C226819E300D87DD3 /* 海贼王8.png in Resources */,
-				CE0C0B8E226819E300D87DD3 /* 海贼王4.png in Resources */,
-				CE0C0B95226819E300D87DD3 /* 海贼王0.png in Resources */,
 				CE0C0AFA226810F700D87DD3 /* LaunchScreen.storyboard in Resources */,
-				CE0C0B91226819E300D87DD3 /* 海贼王6.png in Resources */,
 				CE0C0B6F226819E300D87DD3 /* 奥特曼1.png in Resources */,
 				CE0C0B7B226819E300D87DD3 /* 火影忍者6.png in Resources */,
-				CE0C0B8F226819E300D87DD3 /* 海贼王5.png in Resources */,
 				CE0C0B75226819E300D87DD3 /* 火影忍者3.png in Resources */,
 				CE0C0B9D226819E300D87DD3 /* 犬夜叉4.png in Resources */,
 				CE0C0B6C226819E300D87DD3 /* 奥特曼3.png in Resources */,

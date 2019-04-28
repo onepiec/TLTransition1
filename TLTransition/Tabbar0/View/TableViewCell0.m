@@ -71,6 +71,9 @@
             self.block();
         }
     }else{
+        if (self.noScrollBlock) {
+            self.noScrollBlock();
+        }
         [UIView animateWithDuration:0.2 animations:^{
             self.btn.transform = CGAffineTransformMakeScale(0.97, 0.97);
         } completion:^(BOOL finished) {

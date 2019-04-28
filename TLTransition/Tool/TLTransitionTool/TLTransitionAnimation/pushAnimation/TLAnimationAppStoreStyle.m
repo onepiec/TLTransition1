@@ -35,6 +35,7 @@
     
     UIView *toView = toVC.view;
     toView.alpha = 0;
+
     toView.userInteractionEnabled = NO;
     [[transitionContext containerView] addSubview:toView];
     
@@ -101,6 +102,7 @@
     } completion:^(BOOL finished) {
         
         toView.alpha = 1;
+
         toView.userInteractionEnabled = YES;
         for (UIView *fromSubViewCopy in fromSubViewCopyArr) {
             [fromSubViewCopy removeFromSuperview];
@@ -228,7 +230,7 @@
                 }
                 [lastViewCopy removeFromSuperview];
                 toVC.view.userInteractionEnabled = YES;
-                [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+//                [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
             }];
             
         }

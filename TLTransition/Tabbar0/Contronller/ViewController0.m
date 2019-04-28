@@ -75,6 +75,7 @@
     self.tableView.showsVerticalScrollIndicator = YES;
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
+    
 }
 
 #pragma mark UITableViewDelegate
@@ -86,7 +87,7 @@
     
     UIView *bgView = [[UIView alloc]init];
     bgView.frame = CGRectMake(0, 0, TLDeviceWidth -20, 50);
-//    仿AppStore
+
     UILabel *lab = [[UILabel alloc]init];
     lab.frame = bgView.bounds;
     lab.text = @"仿照AppStore动画";
@@ -123,6 +124,11 @@
     WS(weakSelf);
     __weak __typeof(&*cell)weakCell = cell;
     
+    //防止轻点后，滑动UIScrollView
+    cell.noScrollBlock = ^{
+        SS(strongSelf);
+        strongSelf.view.userInteractionEnabled = NO;
+    };
     cell.block = ^{
         SS(strongSelf);
         
@@ -131,6 +137,7 @@
         }
         strongSelf.hideStatus = YES;
         strongSelf.userEnabled = NO;
+        
         
         strongSelf.btn = weakCell.btn;
         strongSelf.titleLab = weakCell.titleLab;
@@ -143,13 +150,13 @@
         vc.inf = dic[@"inf"];
         strongSelf.selectImageStr = dic[@"img"];
         vc.push = YES;
-
+        
         [strongSelf.navigationController tlPushViewController:vc tlAnimationType:TLAnimationAppStore];
+        strongSelf.btn.transform = CGAffineTransformIdentity;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW,(int64_t)(1.0* NSEC_PER_SEC)),dispatch_get_main_queue(),^{
 
             strongSelf.userEnabled = YES;
-            strongSelf.btn.transform = CGAffineTransformIdentity;
-        });        
+        });
 
     };
     return cell;

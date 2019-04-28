@@ -14,16 +14,15 @@
 + (void)asyncImageWithImageName:(NSString *)imageName block:(void(^)(UIImage *image))block {
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
         UIImage *image = [[UIImage imageNamed:imageName] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        if (image) {
-            dispatch_async(dispatch_get_main_queue(), ^{
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (image) {
                 if(block) {
                     block(image);
                 }
-                
-            });
-        }else{
-            [self asyncImageWithImageName:imageName block:block];
-        }
+            }
+        });
+        
     });
 }
 
