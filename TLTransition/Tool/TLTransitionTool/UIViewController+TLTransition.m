@@ -12,12 +12,19 @@
 #import "TLPushTransitionDelegate.h"
 #import "TLPressTransitionDelegate.h"
 
+static char * const isInteractionKey = "isInteractionKey";
 static char * const animationTypeKey = "animationTypeKey";
 static char * const panDirectionTypesKey = "panDirectionTypesKey";
 
 #pragma mark UIViewController
 @implementation UIViewController (TLTransition)
 
+- (void)setIsInteraction:(BOOL)isInteraction{
+    objc_setAssociatedObject(self, isInteractionKey, @(isInteraction), OBJC_ASSOCIATION_ASSIGN);
+}
+- (BOOL)isInteraction{
+    return [objc_getAssociatedObject(self, isInteractionKey) boolValue];
+}
 
 - (void)setAnimationType:(TLAnimationType)animationType{
     objc_setAssociatedObject(self, animationTypeKey, @(animationType), OBJC_ASSOCIATION_ASSIGN);

@@ -11,6 +11,7 @@
 #import "TLAnimationAppStoreStyle.h"
 #import "UIViewController+TLTransition.h"
 
+#pragma mark Push
 @implementation TLAnimationAppStoreStylePush
 
 - (UIImage *)imageFromView:(UIView *)snapView {
@@ -114,7 +115,7 @@
 
 @end
 
-
+#pragma mark Pop
 @implementation TLAnimationAppStoreStylePop
 
 - (UIImage *)imageFromView:(UIView *)snapView {
@@ -129,9 +130,23 @@
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext{
     
-    return TLTransitionTimePop +0.2;
+    if (self.isInteraction) {
+        return TLTransitionTimePop +0.2;
+    }else{
+        return TLTransitionTimePop;
+    }
 }
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext{
+    
+    if (self.isInteraction) {
+        [self animateTransitionInteraction:transitionContext];
+    }else{
+        [self animateTransitionNoInteraction:transitionContext];
+    }
+
+}
+
+- (void)animateTransitionInteraction:(id<UIViewControllerContextTransitioning>)transitionContext{
     
     
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
@@ -151,8 +166,61 @@
     
     [[transitionContext containerView] addSubview:fromVC.view];
     
+    
+    
+    //--------------------
+    //减少两个动画方法之间的延迟，将第二部分动画所需的方法提前实现
+    fromVC.view.layer.cornerRadius = 8;
+    fromVC.view.transform = CGAffineTransformMakeScale(0.8, 0.8);
+    NSMutableArray *fromSubViewCopyArr = [[NSMutableArray alloc]init];
+    
+    //因为fromVC的views比toVC多一个,所以减1
+    for (int i =0; i <fromSubViews.count -1; i ++) {
+        
+        NSMutableArray *subViewArr = [NSMutableArray new];
+        
+        UIView *fromSubView = fromSubViews[i];
+        for (UIView *subView in fromSubView.subviews) {
+            
+            [subViewArr addObject:subView];
+            subView.hidden = !subView.hidden;
+        }
+        UIImage *image = [self imageFromView:fromSubView];
+        CGRect rect = [fromSubView convertRect:fromSubView.bounds toView:TLKeyWindow];
+        UIImageView *fromSubViewCopy = [[UIImageView alloc]initWithImage:image];
+        fromSubViewCopy.layer.masksToBounds = YES;
+        fromSubViewCopy.frame = rect;
+        //        [[transitionContext containerView] addSubview:fromSubViewCopy];
+        [fromSubViewCopyArr addObject:fromSubViewCopy];
+        
+        for (UIView *subView in subViewArr) {
+            subView.hidden = !subView.hidden;
+        }
+    }
+    
+    for (UIView *toSubView in toSubViews) {
+        toSubView.hidden = YES;
+    }
+    //将fromVC最后一个View放入fromVC第一个View的下面
+    UIView *lastView = [fromSubViews lastObject];
+    UIImage *image = [self imageFromView:lastView];
+    CGRect newRect = [lastView convertRect:lastView.bounds toView:TLKeyWindow];
+    UIImageView *lastViewCopy = [[UIImageView alloc]initWithImage:image];
+    lastViewCopy.frame = newRect;
+    //    [[transitionContext containerView] addSubview:lastViewCopy];
+    
+    UIImageView *fromSubViewCopy0 = fromSubViewCopyArr[0];
+    fromSubViewCopy0.image = [UIImage imageNamed:[fromVC tl_transitionUIViewImage]];
+    fromSubViewCopy0.contentMode = UIViewContentModeCenter;
+    fromSubViewCopy0.layer.masksToBounds = YES;
+    
+    fromVC.view.layer.cornerRadius = 0;
+    fromVC.view.transform = CGAffineTransformIdentity;
+    //--------------------
+    
+    
     //动画
-    fromVC.view.clipsToBounds = YES;//单独设置cornerRadius，他的子视图不会改变cornerRadius
+    fromVC.view.clipsToBounds = YES;//单独设置cornerRadius，不然他的子视图不会改变cornerRadius
     [UIView animateWithDuration:0.2 animations:^{
         
         fromVC.view.layer.cornerRadius = 8;
@@ -162,47 +230,11 @@
         
         if (!transitionContext.transitionWasCancelled) {
             
-            NSMutableArray *fromSubViewCopyArr = [[NSMutableArray alloc]init];
-            
-            //因为fromVC的views比toVC多一个,所以减1
-            for (int i =0; i <fromSubViews.count -1; i ++) {
-                
-                NSMutableArray *subViewArr = [NSMutableArray new];
-                
-                UIView *fromSubView = fromSubViews[i];
-                for (UIView *subView in fromSubView.subviews) {
-                    
-                    [subViewArr addObject:subView];
-                    subView.hidden = !subView.hidden;
-                }
-                UIImage *image = [self imageFromView:fromSubView];
-                CGRect rect = [fromSubView convertRect:fromSubView.bounds toView:TLKeyWindow];
-                UIImageView *fromSubViewCopy = [[UIImageView alloc]initWithImage:image];
-                fromSubViewCopy.layer.masksToBounds = YES;
-                fromSubViewCopy.frame = rect;
-                [[transitionContext containerView] addSubview:fromSubViewCopy];
-                [fromSubViewCopyArr addObject:fromSubViewCopy];
-                
-                for (UIView *subView in subViewArr) {
-                    subView.hidden = !subView.hidden;
-                }
+            for (UIView *subView in fromSubViewCopyArr) {
+                [[transitionContext containerView] addSubview:subView];
             }
-            
-            for (UIView *toSubView in toSubViews) {
-                toSubView.hidden = YES;
-            }
-            //将fromVC最后一个View放入fromVC第一个View的下面
-            UIView *lastView = [fromSubViews lastObject];
-            UIImage *image = [self imageFromView:lastView];
-            CGRect newRect = [lastView convertRect:lastView.bounds toView:TLKeyWindow];
-            UIImageView *lastViewCopy = [[UIImageView alloc]initWithImage:image];
-            lastViewCopy.frame = newRect;
             [[transitionContext containerView] addSubview:lastViewCopy];
             
-            UIImageView *fromSubViewCopy0 = fromSubViewCopyArr[0];
-            fromSubViewCopy0.image = [UIImage imageNamed:[fromVC tl_transitionUIViewImage]];
-            fromSubViewCopy0.contentMode = UIViewContentModeCenter;
-            fromSubViewCopy0.layer.masksToBounds = YES;
             
             [UIView animateWithDuration:TLTransitionTimePop delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0.2 options:UIViewAnimationOptionCurveEaseOut animations:^{
                 
@@ -215,11 +247,10 @@
                     fromSubViewCopy.layer.cornerRadius = toSubView.layer.cornerRadius;
                 }
                 
-                UIImageView *fromSubViewCopy0 = fromSubViewCopyArr[0];
+//                UIImageView *fromSubViewCopy0 = fromSubViewCopyArr[0];
                 lastViewCopy.frame = CGRectMake(fromSubViewCopy0.frame.origin.x, CGRectGetMaxY(fromSubViewCopy0.frame), fromSubViewCopy0.frame.size.width, 0);
                 lastViewCopy.alpha = 0;
-                effectView.alpha = 0;
-                                
+                
             } completion:^(BOOL finished) {
                 
                 for (UIView *fromSubViewCopy in fromSubViewCopyArr) {
@@ -232,13 +263,104 @@
                 toVC.view.userInteractionEnabled = YES;
 //                [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
             }];
-            
         }
         [effectView removeFromSuperview];
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         
     }];
-
+    
 }
 
+
+- (void)animateTransitionNoInteraction:(id<UIViewControllerContextTransitioning>)transitionContext{
+    
+    
+    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    toVC.view.userInteractionEnabled = NO;
+    
+    [[transitionContext containerView] addSubview:toVC.view];
+//    [[transitionContext containerView] addSubview:fromVC.view];
+    
+    NSArray *fromSubViews = [fromVC tl_transitionUIViewFrameViews];
+    NSArray *toSubViews = [toVC tl_transitionUIViewFrameViews];
+
+    
+    NSMutableArray *fromSubViewCopyArr = [[NSMutableArray alloc]init];
+    //因为fromVC的views比toVC多一个,所以减1
+    for (int i =0; i <fromSubViews.count -1; i ++) {
+        
+        NSMutableArray *subViewArr = [NSMutableArray new];
+        
+        UIView *fromSubView = fromSubViews[i];
+        for (UIView *subView in fromSubView.subviews) {
+            
+            [subViewArr addObject:subView];
+            subView.hidden = !subView.hidden;
+        }
+        UIImage *image = [self imageFromView:fromSubView];
+        CGRect rect = [fromSubView convertRect:fromSubView.bounds toView:TLKeyWindow];
+        UIImageView *fromSubViewCopy = [[UIImageView alloc]initWithImage:image];
+        fromSubViewCopy.layer.masksToBounds = YES;
+        fromSubViewCopy.frame = rect;
+        [[transitionContext containerView] addSubview:fromSubViewCopy];
+        [fromSubViewCopyArr addObject:fromSubViewCopy];
+        
+        for (UIView *subView in subViewArr) {
+            subView.hidden = !subView.hidden;
+        }
+    }
+    
+    for (UIView *toSubView in toSubViews) {
+        toSubView.hidden = YES;
+    }
+    //将fromVC最后一个View放入fromVC第一个View的下面
+    UIView *lastView = [fromSubViews lastObject];
+    UIImage *image = [self imageFromView:lastView];
+    CGRect newRect = [lastView convertRect:lastView.bounds toView:TLKeyWindow];
+    UIImageView *lastViewCopy = [[UIImageView alloc]initWithImage:image];
+    lastViewCopy.frame = newRect;
+    [[transitionContext containerView] addSubview:lastViewCopy];
+    
+    UIImageView *fromSubViewCopy0 = fromSubViewCopyArr[0];
+    fromSubViewCopy0.image = [UIImage imageNamed:[fromVC tl_transitionUIViewImage]];
+    fromSubViewCopy0.contentMode = UIViewContentModeCenter;
+    fromSubViewCopy0.layer.masksToBounds = YES;
+    
+
+    [fromVC.view removeFromSuperview];
+  
+    [UIView animateWithDuration:TLTransitionTimePop delay:0 usingSpringWithDamping:0.6 initialSpringVelocity:0.3 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        
+        for (int i =0; i <fromSubViewCopyArr.count; i ++) {
+            
+            UIView *fromSubViewCopy = fromSubViewCopyArr[i];
+            UIView *toSubView = toSubViews[i];
+            CGRect rect = [toSubView convertRect:toSubView.bounds toView:TLKeyWindow];
+            fromSubViewCopy.frame = rect;
+            fromSubViewCopy.layer.cornerRadius = toSubView.layer.cornerRadius;
+        }
+        
+        
+        lastViewCopy.frame = CGRectMake(fromSubViewCopy0.frame.origin.x, CGRectGetMaxY(fromSubViewCopy0.frame), fromSubViewCopy0.frame.size.width, 0);
+        lastViewCopy.alpha = 0;
+        
+    } completion:^(BOOL finished) {
+    
+        if (!transitionContext.transitionWasCancelled) {
+            
+            for (UIView *toSubView in toSubViews) {
+                toSubView.hidden = NO;
+            }
+        }
+        for (UIView *fromSubViewCopy in fromSubViewCopyArr) {
+            [fromSubViewCopy removeFromSuperview];
+        }
+        [lastViewCopy removeFromSuperview];
+        toVC.view.userInteractionEnabled = YES;
+        
+        [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+    }];
+
+}
 @end

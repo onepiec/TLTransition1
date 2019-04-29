@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TLAnimationAppStoreStylePop : NSObject<UIViewControllerAnimatedTransitioning>
 
+@property (nonatomic, assign) BOOL isInteraction;
+
 @end
 
 NS_ASSUME_NONNULL_END

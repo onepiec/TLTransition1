@@ -34,15 +34,27 @@
 
     return UIStatusBarAnimationSlide;
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    if (!self.isInteraction) {
+        [self animationStatusBar];
+    }
+}
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+
+    if (self.isInteraction) {
+        [self animationStatusBar];
+    }
+}
+- (void)animationStatusBar{
     
     self.hideStatus = NO;
     [UIView animateWithDuration:0.5 animations:^{
         [self setNeedsStatusBarAppearanceUpdate];
     }];
 }
-
 - (NSMutableArray *)dataArr{
     if (!_dataArr) {
         _dataArr = [NSMutableArray new];
@@ -65,7 +77,7 @@
     self.hideNavBar = YES;
     self.userEnabled = YES;
     
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(10, 20 +EXStatusHeight, TLDeviceWidth -20, TLDeviceHeight -(TabBarHeight +20 +EXStatusHeight)) style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(10, 20 +EXStatusHeight, TLDeviceWidth -20, TLDeviceHeight -(20 +EXStatusHeight)) style:UITableViewStyleGrouped];
     self.tableView.estimatedRowHeight = 0;
     self.tableView.estimatedSectionHeaderHeight = 0;
     self.tableView.estimatedSectionFooterHeight = 0;
@@ -76,6 +88,11 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     
+    UIView *footView = [UIView new];
+    footView.frame = CGRectMake(0, 0, TLDeviceWidth, TabBarHeight);
+    footView.backgroundColor = [UIColor whiteColor];
+    self.tableView.tableFooterView = footView;
+
 }
 
 #pragma mark UITableViewDelegate

@@ -343,7 +343,13 @@
             return [TLAnimationWindowScaleStylePop new];
             
         }else if (TLAnimationAppStore == fromVC.animationType){
-            return [TLAnimationAppStoreStylePop new];
+            
+            TLAnimationAppStoreStylePop *obj = [TLAnimationAppStoreStylePop new];
+            
+            UIViewController *pushController = [self.popController.navigationController.childViewControllers lastObject];
+            pushController.isInteraction = self.isInteraction;
+            obj.isInteraction = self.isInteraction;
+            return obj;
         }
     }
     
@@ -366,7 +372,22 @@
     [navigationController setNavigationBarHidden:navigationController.hideNavBar animated:YES];
     
     if (1 == navigationController.viewControllers.count) {
+        
+        if (TLAnimationAppStore == self.popController.animationType) {
 
+            //出现
+            if (navigationController.tabBarController.tabBar.hidden && !self.isInteraction) {
+
+                CGRect tabRect = navigationController.tabBarController.tabBar.frame;
+                navigationController.tabBarController.tabBar.frame = CGRectMake(tabRect.origin.x, TLDeviceHeight +tabRect.size.height, tabRect.size.width, tabRect.size.height);
+                navigationController.tabBarController.tabBar.hidden = NO;
+                [UIView animateWithDuration:0.5 animations:^{
+                    navigationController.tabBarController.tabBar.frame = CGRectMake(tabRect.origin.x, TLDeviceHeight -tabRect.size.height, tabRect.size.width, tabRect.size.height);
+                }];
+
+            }
+        }
+        
     }else if (2 == navigationController.viewControllers.count) {
         
         //消失

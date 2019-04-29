@@ -20,8 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (TLTransition)
 
+@property (nonatomic, assign) BOOL isInteraction;
 @property (nonatomic, assign) TLAnimationType animationType;
 @property (nonatomic, assign) TLPanDirectionType panDirectionTypes;
+
 
 - (void)setContainScrollView:(UIScrollView *)scrollView isPush:(BOOL)isPush;
 - (void)tlPresentViewController:(UIViewController *)vc tlAnimationType:(TLAnimationType)tlAnimationType animated:(BOOL)animated completion:(void (^__nullable)(void))completion;
