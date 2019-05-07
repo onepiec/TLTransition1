@@ -304,6 +304,7 @@
         [self.popController.navigationController popViewControllerAnimated:YES];
         
     }else{//正常返回
+        
         if (percentComplete > targetFloat){
             [self finishInteractiveTransition];
         }else{

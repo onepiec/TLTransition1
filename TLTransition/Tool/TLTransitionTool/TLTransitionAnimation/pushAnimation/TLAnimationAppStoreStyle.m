@@ -218,7 +218,6 @@
     fromVC.view.transform = CGAffineTransformIdentity;
     //--------------------
     
-    
     //动画
     fromVC.view.clipsToBounds = YES;//单独设置cornerRadius，不然他的子视图不会改变cornerRadius
     [UIView animateWithDuration:0.2 animations:^{
@@ -227,7 +226,7 @@
         fromVC.view.transform = CGAffineTransformMakeScale(0.8, 0.8);
         
     } completion:^(BOOL finished) {
-        
+
         if (!transitionContext.transitionWasCancelled) {
             
             for (UIView *subView in fromSubViewCopyArr) {
@@ -237,6 +236,7 @@
             
             
             [UIView animateWithDuration:TLTransitionTimePop delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0.2 options:UIViewAnimationOptionCurveEaseOut animations:^{
+                
                 
                 for (int i =0; i <fromSubViewCopyArr.count; i ++) {
                     
@@ -250,6 +250,7 @@
 //                UIImageView *fromSubViewCopy0 = fromSubViewCopyArr[0];
                 lastViewCopy.frame = CGRectMake(fromSubViewCopy0.frame.origin.x, CGRectGetMaxY(fromSubViewCopy0.frame), fromSubViewCopy0.frame.size.width, 0);
                 lastViewCopy.alpha = 0;
+                effectView.alpha = 0;
                 
             } completion:^(BOOL finished) {
                 
@@ -259,12 +260,15 @@
                 for (UIView *toSubView in toSubViews) {
                     toSubView.hidden = NO;
                 }
+                [effectView removeFromSuperview];
                 [lastViewCopy removeFromSuperview];
                 toVC.view.userInteractionEnabled = YES;
 //                [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
             }];
+        }else {
+            [effectView removeFromSuperview];
         }
-        [effectView removeFromSuperview];
+        
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         
     }];
