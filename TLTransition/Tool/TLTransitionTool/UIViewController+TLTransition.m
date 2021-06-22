@@ -90,8 +90,7 @@ static char * const panDirectionTypesKey = "panDirectionTypesKey";
     
     
     if (TLAnimationUIViewFrame == self.animationType || TLAnimationWindowScale == self.animationType || TLAnimationAppStore == self.animationType) {
-        
-        self.navigationController.interactivePopGestureRecognizer.delegate = [TLPushTransitionDelegate shareInstance];
+
         self.navigationController.delegate = [TLPushTransitionDelegate shareInstance];
         [TLPushTransitionDelegate shareInstance].popController = self;
     }else{
@@ -187,7 +186,6 @@ static char * const indexKey = "indexKey";
 
 - (instancetype)swizzInitWithRootViewController:(UIViewController *)rootViewController{
     
-    self.interactivePopGestureRecognizer.delegate = [TLPushTransitionDelegate shareInstance];
     self.delegate = [TLPushTransitionDelegate shareInstance];
     return [self swizzInitWithRootViewController:rootViewController];
     
@@ -198,13 +196,13 @@ static char * const indexKey = "indexKey";
     if (TLAnimationUIViewFrame == tlAnimationType) {
         
         [TLPushTransitionDelegate shareInstance].popController = vc;
-        [[TLPushTransitionDelegate shareInstance] addPanGestureForViewController:vc];
+        [[TLPushTransitionDelegate shareInstance] addPanGestureForViewController:vc directionTypes:TLPanDirectionEdgeLeft];
         vc.animationType = tlAnimationType;
         
         
     }else if (TLAnimationWindowScale == tlAnimationType){
         [TLPushTransitionDelegate shareInstance].popController = vc;
-        [[TLPushTransitionDelegate shareInstance] addPanGestureForViewController:vc];
+        [[TLPushTransitionDelegate shareInstance] addPanGestureForViewController:vc directionTypes:TLPanDirectionEdgeLeft];
         vc.animationType = tlAnimationType;
         
     }else if (TLAnimationAppStore == tlAnimationType){

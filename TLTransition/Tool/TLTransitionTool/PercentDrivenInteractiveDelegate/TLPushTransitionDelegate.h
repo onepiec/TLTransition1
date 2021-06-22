@@ -10,14 +10,13 @@
 #import "TLPanDirectionStyle.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TLPushTransitionDelegate : UIPercentDrivenInteractiveTransition<UINavigationControllerDelegate,UIGestureRecognizerDelegate>
+@interface TLPushTransitionDelegate : UIPercentDrivenInteractiveTransition<UINavigationControllerDelegate>
 
 @property (nonatomic ,weak)UIViewController *popController;
 @property (nonatomic ,weak)UIScrollView *scrollView;
 
 + (instancetype)shareInstance;
-//系统自带侧滑
-- (void)addPanGestureForViewController:(UIViewController *)viewController;
+
 //自定义全屏手势
 - (void)addPanGestureForViewController:(UIViewController *)viewController directionTypes:(TLPanDirectionType)directionTypes;
 @end

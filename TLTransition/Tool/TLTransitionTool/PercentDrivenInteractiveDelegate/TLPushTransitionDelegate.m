@@ -35,65 +35,7 @@
     });
     return _instance;
 }
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
-    
-//    return NO;
-    if ([gestureRecognizer isMemberOfClass:[UIScreenEdgePanGestureRecognizer class]]) {
-        
-        if ([otherGestureRecognizer isMemberOfClass:[UIScreenEdgePanGestureRecognizer class]]) {
-            return NO;
-        }
-        if ([otherGestureRecognizer isMemberOfClass:[UIPanGestureRecognizer class]]) {
-            return NO;
-        }
-    }
-    if ([gestureRecognizer isMemberOfClass:[UIPanGestureRecognizer class]]) {
-        if ([otherGestureRecognizer isMemberOfClass:[UIScreenEdgePanGestureRecognizer class]]) {
-            return NO;
-        }
-    }
-    return YES;
-}
-#pragma mark 系统手势
-- (void)addPanGestureForViewController:(UIViewController *)viewController{
-    
-    UIScreenEdgePanGestureRecognizer *edgePan = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(doInteractiveTypePop:)];
-    edgePan.edges = UIRectEdgeLeft;
-    [viewController.view addGestureRecognizer:edgePan];
-    
-}
-- (void)doInteractiveTypePop:(UIPanGestureRecognizer *)gesture{
-    
-    CGPoint  translation = [gesture translationInView:gesture.view];
-    CGFloat percentComplete = 0.0;
-    
-    //左右滑动的百分比
-    percentComplete = translation.x / [[UIApplication sharedApplication] keyWindow].frame.size.width;
-    percentComplete = fabs(percentComplete);
-    
-    switch (gesture.state)
-    {
-        case UIGestureRecognizerStateBegan:
-            self.isInteraction = YES;
-            [self.popController.navigationController popViewControllerAnimated:YES];
-            break;
-        case UIGestureRecognizerStateChanged:
-            self.isInteraction = NO;
-            [self updateInteractiveTransition:percentComplete];
-            break;
-        case UIGestureRecognizerStateEnded:
-            self.isInteraction = NO;
-            if (percentComplete > 0.3f)
-                [self finishInteractiveTransition];
-            else
-                [self cancelInteractiveTransition];
-            break;
-        default:
-            self.isInteraction = NO;
-            [self cancelInteractiveTransition];
-            break;
-    }
-}
+
 #pragma mark 自定义手势
 - (void)addPanGestureForViewController:(UIViewController *)viewController directionTypes:(TLPanDirectionType)directionTypes{
     
@@ -102,7 +44,6 @@
     self.startDirection = TLPanDirectionNone;
     viewController.panDirectionTypes = directionTypes;
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(doGestureRecognizerPop:)];
-    pan.delegate = self;
     [viewController.view addGestureRecognizer:pan];
     
 }
@@ -409,7 +350,11 @@
         
         navigationController.interactivePopGestureRecognizer.enabled = NO;
     }else {
-        navigationController.interactivePopGestureRecognizer.enabled = YES;
+        if (viewController.animationType > 1) {
+            navigationController.interactivePopGestureRecognizer.enabled = NO;
+        }else {
+            navigationController.interactivePopGestureRecognizer.enabled = YES;
+        }
     }
     
     if (1 == navigationController.viewControllers.count) {
